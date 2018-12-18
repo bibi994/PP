@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.red{
+    color: #ff5155;
+}
+.green{
+    color: #00b7b2;
+}
+header{
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+.container{
+    margin: 0 auto;
+    width:760px;
+}
+.exam-passed{
+    background-color: #00b7b2;
+    width: 50%;
+    margin: 30px auto 15px auto;
+    display: flex;
+}
+.exem-passed-left{
+    width: 70%;
+    text-align: left;
+    padding: 3%;
+}
+
+.exem-passed-right{
+    padding: 3%;
+    display: flex;
+}
+#printPassedPercent{
+    margin-left: 50%;
+    padding: 0 10%;
+    background-color: #419c99;
+    border-radius: 5px;
+    width: 240%;
+}
+
+.exam-failed{
+    background-color: #ff5155;
+    width: 50%;
+    margin: 30px auto 15px auto;
+    display: flex;
+}
+.exem-failed-left{
+    width: 70%;
+    text-align: left;
+    padding: 3%;
+}
+
+.exem-failed-right{
+    padding: 3%;
+    display: flex;
+}
+#printFailedPercent{
+    margin-left: 50%;
+    padding: 0 10%;
+    background-color: #c46567;
+    border-radius: 5px;
+    width: 240%;
+}
+
+#printPassedNumber{
+    width: 5px;
+}
+#printFailedNumber{
+    width: 5px;
+}
+
+
+.main{
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+
+.custom-select{
+    display: inline;
+    width: 120px;
+    margin-top: -5px;
+}
+#inputName{
+    display: inline;
+    width: 400px;
+}
+#grade{
+    display: inline;
+    width: 120px;
+}
+.btn{
+    margin-top: -5px;
+}
+
+.lists{
+    width: 950px;
+    margin: 25px auto 0px auto;
+}
+.list-group-item{
+    border: 0;
+    margin-bottom: 0; 
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 5px;
+    margin-right: 15px;
+}
+
+li{
+    border-bottom: 1px solid black;   
+}
+
+.li-right{
+    float: right;
+    padding-right: 15px;
+}
+
+#passed-delete{
+    float: right;
+}
+#failed-delete{
+    float: right;
+}
+
+.list-header{
+    width: 950px;
+    margin: 15px auto 0 auto;;
+    font-size: 20px;
+}
+.col-6{
+    margin: 0;
+    padding: 0;
+}
+h5{
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+.row{
+    margin: 15px auto;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Festival Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="first-selection">
+
+            <h1>
+                <span>BIT</span> Movie Festival</h1>
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+                <p class="error-title error"></p>
+            </div>
+
+            <div class="form-group">
+                <label>Lenght (min)</label>
+                <input type="text" class="form-control" id="inputLength" placeholder="Lenght in min">
+                <p class="error-length error"></p>
+            </div>
+
+            <div class="form-group">
+                <label class="mr-sm-2">Genre</label>
+                <select class="browser-default custom-select" id="inputGenre">
+                    <option selected>Chose genre...</option>
+                    <option value="action">Action</option>
+                    <option value="drama">Drama</option>
+                    <option value="horor">Horor</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <p class="error-genre error"></p>
+            </div>
+
+            <button type="button" id="createMovieButton" class="btn btn-primary btn-block">Create Movie</button>
+
+            <ul id="movieListPrint" class="list-group">
+
+            </ul>
+            <hr>
+
+            <div>
+                <p class="text-right" id="allMoviesLength"></p>
+            </div>
+
+        </div>
+
+        <div class="second-selection">
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="text" class="form-control" id="inputDate" placeholder="mm/dd/yyyy">
+                <p class="error-date error"></p>
+            </div>
+
+            <button type="button" id="createProgramButton" class="btn btn-primary btn-block">Create Program</button>
+
+            <div>
+                <ul id="programListPrint" class="list-group"></ul>
+            </div>
+            <hr>
+
+            <div>
+                <label class="mr-sm-2">Movie</label>
+                <select class="browser-default custom-select" id="selectOfMovies">
+                    <option>-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="mr-sm-2">Program</label>
+                <select class="browser-default custom-select" id="selectOfPrograms">
+                    <option>-</option>
+                </select>
+            </div>
+
+            <button type="button" id="addMovieToProgramButton" class="btn btn-primary btn-block">Add movie to program</button>
+
+        </div>
+
+    </div>
+
+    <script src="./js/entities.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
